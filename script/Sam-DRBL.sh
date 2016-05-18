@@ -104,7 +104,7 @@ else
 
 	echo	
 	echo "Exécution de drblpush -c /etc/drbl/Sam-drblpush-Debian8.conf"
-	cp Sam-drblpush-Debian8.conf /etc/drbl/Sam-drblpush-Debian8.conf
+	cp Sam-drblpush-Debian8.conf /etc/drbl/
 	sleep 2 &
 	wait %2
 	drblpush -c /etc/drbl/Sam-drblpush-Debian8.conf
