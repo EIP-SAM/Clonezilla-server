@@ -25,6 +25,7 @@ allow-hotplug eth0
 iface eth0 inet dhcp
 
 # Interface for Clonezilla, make sure you use a "Class C" IP (192.168.x.x)
+auto eth1
 iface eth1 inet static
 address 192.168.1.2
 netmask 255.255.255.0

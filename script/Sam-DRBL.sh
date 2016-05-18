@@ -54,19 +54,20 @@ else
 	echo
 
 	#Debian
-	#echo "Redémarrage des interfaces réseaux."
-	#/etc/init.d/networking restart
-	#sleep 10
-	#echo "Ok"
-	#echo
-
-	#Ubuntu
 	echo "Redémarrage des interfaces réseaux."
-	service network-manager restart
+	/etc/init.d/networking restart
 	sleep 10 &
 	wait %1
 	echo "Ok"
 	echo
+
+	#Ubuntu
+	#echo "Redémarrage des interfaces réseaux."
+	#service network-manager restart
+	#sleep 10 &
+	#wait %1
+	#echo "Ok"
+	#echo
 	
 	echo "------------------------------------------------"
 	echo "|  Préparation à l’installation de clonezilla  |"
