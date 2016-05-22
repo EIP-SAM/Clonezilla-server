@@ -53,9 +53,5 @@ deb http://security.ubuntu.com/ubuntu xenial-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu xenial-security multiverse
 
 # Clonezilla
-#Ubuntu
-#deb http://free.nchc.org.tw/ubuntu xenial main restricted universe multiverse
-#deb http://free.nchc.org.tw/drbl-core drbl stable
-#Debian
-deb http://ftp.us.debian.org/debian/ wheezy main
+deb http://free.nchc.org.tw/ubuntu xenial main restricted universe multiverse
 deb http://free.nchc.org.tw/drbl-core drbl stable

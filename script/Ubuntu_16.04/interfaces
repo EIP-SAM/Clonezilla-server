@@ -1,0 +1,20 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Network Interface, this should match your network
+allow-hotplug ens33
+iface ens33 inet dhcp
+metric 0
+
+# Interface for Clonezilla, make sure you use a "Class C" IP #(192.168.x.x)
+auto ens38
+iface ens38 inet static
+metric 1
+address 192.168.1.4
+netmask 255.255.255.0
+gateway 192.168.1.1
+
